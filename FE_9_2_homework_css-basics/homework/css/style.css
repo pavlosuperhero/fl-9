@@ -1,0 +1,120 @@
+:root{
+		--main-color:rgba(49,176,213,1);
+	}
+@media screen {
+	
+	p::first-letter{
+		color: #76cdd7;
+		font-size:30px;
+		initial-letter:2;
+	}
+	.tm-content-box, .tm-sidebar{
+		box-shadow: 0 0 1em black;
+	}
+
+	.boxes .box-bg:hover{
+		background-color: var(--main-color);
+	}
+	.boxes .box-bg h2:hover{
+		color: #fff;
+	}
+	.boxes .box img{
+		border-radius: 50%;
+	}
+	.margin-b-10, .heading, .flex-2-col, #ideas{
+		position: relative;
+		border-top-left-radius: 20px;
+		overflow: hidden;
+	}
+	.margin-b-10:before, .heading:before,.flex-2-col:before, #ideas:before{
+		border-right: 120px solid #fff;
+		border-top: 25px solid var(--main-color);
+		content: '';
+		font-size: 0px; 
+		height: 0px;
+		left:0px; 
+		line-height: 0%; 
+		overflow: hidden;
+		position: absolute;
+		top:0px;
+		width: 0px;
+	}
+	.carousel-item h2.tm-section-title{
+		color:gainsboro ;
+		word-spacing: 5px;
+	}
+	h2 + p{
+		font-style: italic;
+	}
+	.heading .pad li a:hover{
+		color: var(--main-color);
+		text-decoration: underline;
+		border-bottom: 1px double;
+	}
+	.heading .pad li a:visited{
+		color: silver;
+	}
+	.heading .pad li:nth-child(1):after, .heading .pad li:nth-child(3):after{
+		color: red;
+		content: 'New';
+		font-size: 12px;
+		vertical-align: 35%;
+	}
+	.boxes li:nth-child(odd):not(.box-bg){
+		background-color: rgba(192,192,192,0.3);
+	}
+	.boxes h2 + p:first-letter{
+		color: black;
+	}
+	.tm-main-nav li:not(:last-child){
+		border-bottom: 2px dotted silver;
+	}
+	#contact_name[type=text], #contact_subject[type=text]{
+		color: red;
+	}
+	.mandatory-field:after{
+		content: "*";
+		color:red;
+	}
+	button{
+		color: red !important;
+	}
+	button:hover{
+		color:#fff !important;
+		background-color: var(--main-color) !important;
+	}
+}
+@media print{
+	@page{
+		size:auto;
+		.margin-b-10{
+			margin-bottom: 0px;
+		}
+		#home, .tm-banner{
+			height: 300px;
+		}
+		.tm-sidebar, .tm-content-box:not(:first-child), .blocks, .carousel{
+			display: none;
+			width: 0;
+			height: 0;
+		}
+		.tm-main-content{
+			margin: 0 auto;
+		}
+		.flex-2-col{
+			display: block;
+			font-size: 12px;
+		}
+		.flex-2-col .flex-item img{
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			height: 250px;
+		}
+
+		.flex-2-col h2{
+			color: var(--main-color);
+		}
+	}
+
+}
