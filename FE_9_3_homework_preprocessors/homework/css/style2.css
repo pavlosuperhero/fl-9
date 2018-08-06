@@ -1,0 +1,149 @@
+body {
+  background-color: #efefef;
+}
+
+.main-wrapper {
+  max-width: 1900px;
+  font-family: sans-serif;
+  position: relative;
+  margin: 0 auto;
+}
+.main-wrapper h3 {
+  font-family: Tahoma;
+}
+.main-wrapper header {
+  display: flex;
+  margin-bottom: 205px;
+  width: 100%;
+}
+.main-wrapper header .logo {
+  max-height: 380px;
+}
+.main-wrapper header nav {
+  border-bottom: 1px solid grey;
+  border-top: 1px solid grey;
+  bottom: 50px;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 297px;
+  padding-bottom: 45px;
+  padding-top: 45px;
+  width: 100%;
+}
+.main-wrapper header nav a {
+  color: #fc5830;
+  font-size: 30px;
+  padding-left: 50px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.main-wrapper .toolbar {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+  width: 100%;
+}
+.main-wrapper .toolbar input {
+  border: 1px solid #fc5830;
+  height: 80px;
+  width: 400px;
+  background-color: #efefef;
+}
+.main-wrapper .toolbar input[type=text] {
+  color: #fc5830;
+  font-size: 25px;
+  padding-left: 45px;
+}
+.main-wrapper .post-list {
+  align-items: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1900px;
+}
+.main-wrapper .post-list article {
+  background: #ffffff;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+  max-height: 1500px;
+  width: 920px;
+}
+.main-wrapper .post-list article img {
+  max-height: 1100px;
+  padding: 20px;
+  width: 880px;
+}
+.main-wrapper .post-list article .post-description {
+  border-bottom: 1px solid black;
+  color: #c9d3db;
+  font-size: 14px;
+  padding: 25px;
+  margin: 0 45px 0 45px;
+}
+.main-wrapper .post-list article h3 {
+  padding: 20px 45px 0px 45px;
+  color: #617d8a;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+.main-wrapper .post-list article p {
+  color: #617d9d;
+  padding: 20px 45px 65px 45px;
+  line-height: 25px;
+  font-size: 25px;
+}
+.main-wrapper .about h1 {
+  font-size: 35px;
+  margin-top: 175px;
+  text-transform: uppercase;
+  color: #fc5830;
+  text-align: right;
+}
+.main-wrapper .about p {
+  font-size: 25px;
+  color: #617d9d;
+}
+.main-wrapper .about img {
+  width: 100%;
+}
+.main-wrapper .contact-form h1 {
+  font-size: 35px;
+  margin-top: 135px;
+  text-transform: uppercase;
+  color: #fc5830;
+  text-align: right;
+}
+.main-wrapper .contact-form h4 {
+  font-size: 25px;
+  text-transform: uppercase;
+  color: #fc5830;
+  text-align: right;
+}
+.main-wrapper .contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+.main-wrapper .contact-form form input, .main-wrapper .contact-form form textarea {
+  padding: 20px;
+  margin: 20px;
+}
+.main-wrapper .contact-form form input[type=text], .main-wrapper .contact-form form textarea[type=text] {
+  font-family: bold;
+}
+.main-wrapper .contact-form form input:placeholder, .main-wrapper .contact-form form textarea:placeholder {
+  font-family: 20px;
+}
+.main-wrapper .contact-form form .right {
+  background-color: #fc5830;
+  color: #fff;
+  float: right;
+  width: 400px;
+  height: 80px;
+  font-size: 20px;
+}
+.main-wrapper .contact-form form .right:active {
+  transform: translateY(5px);
+}
+
+/*# sourceMappingURL=style2.css.map */

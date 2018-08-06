@@ -1,0 +1,164 @@
+body{
+		background-color: $bg;	
+}
+.main-wrapper
+{
+	max-width: 1900px;
+	font-family: sans-serif;
+	position: relative;
+	margin:0 auto;
+	h3{
+		font-family: Tahoma;
+	}
+		header
+		{
+			display: flex;
+			margin-bottom: 205px;
+			width: 100%;
+
+			.logo{
+				max-height: 380px;
+			}
+			nav
+			{
+				border-bottom: 1px solid grey;
+				border-top:1px solid grey;
+				bottom: 50px;
+				display: flex;
+				justify-content:space-around;
+				margin-top: 297px;
+				padding-bottom: 45px;		
+				padding-top:45px;
+				width: 100%;
+				a
+				{
+					color: $second-color;
+					font-size: 30px;
+					padding-left: 50px;
+					text-decoration: none;
+					text-transform: uppercase;
+				}
+
+			}
+			
+		}
+		.toolbar 
+		{
+			display: flex;
+			justify-content:flex-end;
+			margin-bottom: 20px;
+			width: 100%;
+				input{
+					border:1px solid $second-color;
+					height: 80px;
+					width: 400px;
+					background-color: $bg;
+					&[type=text]{
+						color: $second-color;
+						font-size: 25px;
+						padding-left: 45px;
+					}
+				}
+					
+		}
+		.post-list
+		{
+			align-items:flex-start;
+			display: flex;
+			flex-wrap:wrap;
+			justify-content:space-between;
+			max-width: 1900px;
+			article
+			{
+				background: $article;
+				flex-direction:column;
+				flex-wrap:wrap;
+				margin-bottom: 40px;
+				max-height: 1500px;
+				width: 920px;
+				img{
+					max-height: 1100px;
+					padding: 20px;
+					width: 880px;
+				}
+				.post-description
+				{
+					border-bottom:1px solid black;
+					color: $text-color;
+					font-size: 14px;
+					padding: 25px;
+					margin:0 45px 0 45px;
+				}	
+				h3
+				{
+					padding: 20px 45px 0px 45px;
+					color:$main-color;
+					font-size: 30px;
+					text-transform: uppercase;
+				}
+				p
+				{
+					color:#617d9d;
+					padding:20px 45px 65px 45px;
+					line-height: 25px;
+					font-size: 25px;
+				}
+			}
+		}
+		.about{
+			h1{
+				font-size: 35px;
+				margin-top:175px;
+				text-transform: uppercase;
+				color: $second-color;
+				text-align: right;
+			}
+			p
+			{
+				font-size: 25px;
+				color:#617d9d;
+			}
+			img
+			{
+				width: 100%;
+			}
+		}
+		.contact-form
+		{	
+			h1
+			{
+				font-size: 35px;
+				margin-top:135px;
+				text-transform: uppercase;
+				color: $second-color;
+				text-align: right;
+			}
+			h4{
+				font-size: 25px;
+				text-transform: uppercase;
+				color: $second-color;
+				text-align: right;
+			}
+			form{
+				display: flex;
+				flex-direction:column;
+				input, textarea{
+					padding: 20px;
+					margin: 20px;
+					&[type=text]{font-family: bold;}
+				}
+				.right
+				{
+					background-color: $second-color;
+					color:#fff;
+					float: right;
+					width: 400px;
+					height: 80px;
+					font-size: 20px;
+					&:active{
+						transform: translateY(5px);
+					}
+				}
+			}
+		}
+}
