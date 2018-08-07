@@ -4,7 +4,7 @@ body {
 
 .main-wrapper {
   max-width: 1900px;
-  font-family: sans-serif;
+  font-family: serif;
   position: relative;
   margin: 0 auto;
 }
@@ -130,9 +130,6 @@ body {
 }
 .main-wrapper .contact-form form input[type=text], .main-wrapper .contact-form form textarea[type=text] {
   font-family: bold;
-}
-.main-wrapper .contact-form form input:placeholder, .main-wrapper .contact-form form textarea:placeholder {
-  font-family: 20px;
 }
 .main-wrapper .contact-form form .right {
   background-color: #fc5830;
