@@ -1,0 +1,254 @@
+body {
+  min-width: 900px;
+  max-width: 1600px;
+  margin: auto;
+}
+body strong {
+  font-weight: bold;
+}
+body p, body h1, body h2, body h3, body h4, body h5, body h6, body a, body input[type=text] {
+  font-family: "Open Sans";
+}
+
+/* Head */
+header {
+  background-attachment: fixed;
+  background-image: url("../img/apples.jpg");
+  background-position: center center;
+  background-size: cover;
+  height: 940px;
+  width: 100%;
+}
+header .header-container {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+header .header-container .logo {
+  color: #fff;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+header h1 {
+  color: #f3f3f3;
+  font-size: 50px;
+  letter-spacing: 6px;
+  margin-top: 270px;
+  text-align: center;
+  text-transform: uppercase;
+}
+header h1 b {
+  font-size: 85px;
+}
+header a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+header p {
+  color: #fff;
+  font-size: 15px;
+  padding: 40px;
+  text-align: center;
+  text-transform: capitalize;
+}
+header ul {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+header ul li {
+  padding-right: 75px;
+}
+header ul a {
+  font-size: 18px;
+}
+header ul a:hover {
+  border-bottom: 2px solid #A4A4A4;
+  color: #A4A4A4;
+}
+header span {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 140px;
+  margin-top: 220px;
+}
+header span input[type=button] {
+  background-color: rgba(52, 54, 56, 0.2);
+  color: #fff;
+  height: 60px;
+  text-decoration: none;
+  text-transform: capitalize;
+  width: 300px;
+  border: 3px solid #fff;
+}
+
+.after-head {
+  width: 100%;
+  height: 434px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.after-head p {
+  width: 50%;
+}
+.after-head p:first-child {
+  font-family: sans-serif;
+  font-size: 35px;
+  padding-left: 45px;
+}
+.after-head p:last-child {
+  font-size: 18px;
+}
+
+/* article section */
+.article-sector {
+  background-color: #f3f3f3;
+  height: 2200px;
+}
+.article-sector h2 {
+  text-align: center;
+  font-size: 30px;
+  padding-top: 190px;
+  margin-bottom: 120px;
+}
+
+.sectors {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sectors figure {
+  width: 58%;
+  margin: 10px;
+  position: relative;
+}
+.sectors figure span {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  color: #fff;
+  border: 3px solid #fff;
+  background-color: #5e5e5e;
+  padding: 7px;
+  font-size: 17px;
+}
+.sectors figure span svg {
+  fill: #fff;
+  vertical-align: top;
+}
+.sectors figure img {
+  width: 100%;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.sectors figure figcaption {
+  position: absolute;
+  color: #fff;
+  left: 20px;
+  bottom: 30px;
+  text-transform: capitalize;
+}
+.sectors figure figcaption b {
+  font-weight: bold;
+}
+.sectors p {
+  text-align: center;
+  width: 38%;
+}
+
+/*subscribe forms */
+.subscribe-form {
+  background-color: #fff;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  height: 190px;
+  margin: 30px;
+  padding-bottom: 25px;
+  width: 96%;
+}
+.subscribe-form form {
+  display: grid;
+  grid-gap: 0;
+  grid-template-columns: 5fr 1fr;
+  padding: 69px;
+}
+.subscribe-form form input[type=text] {
+  background-color: #f3f3f3;
+  border: 1px solid black;
+  padding-left: 20px;
+}
+.subscribe-form form input[type=submit] {
+  background-color: #343638;
+  border: 1px solid black;
+  color: #fff;
+}
+.subscribe-form p {
+  margin: auto;
+  text-align: center;
+  width: 100%;
+}
+
+.subscribe-form-footer {
+  background-color: #fff;
+}
+.subscribe-form-footer form {
+  display: flex;
+  justify-content: flex-end;
+}
+.subscribe-form-footer form input[type=text] {
+  padding: 10px;
+  background-color: #f3f3f3;
+  border: 1px solid black;
+}
+.subscribe-form-footer form input[type=submit] {
+  background-color: #343638;
+  border: 1px solid black;
+  color: #fff;
+}
+.subscribe-form-footer p {
+  margin: auto;
+  text-align: center;
+  width: 100%;
+}
+
+/*	footer */
+.footer-head {
+  margin: 150px 40px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 25% 50%;
+  width: 100%;
+}
+.footer-head p {
+  padding: 20px;
+  color: #9e9e9e;
+  font-size: 15px;
+}
+.footer-head h3 {
+  padding: 20px;
+  text-transform: capitalize;
+}
+.footer-head #tweet-counter {
+  color: #9e9e9e;
+  opacity: 0.5;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-bottom p {
+  color: #9e9e9e;
+}
+.footer-bottom ul {
+  display: flex;
+}
+.footer-bottom ul a {
+  text-decoration: none;
+  margin: 20px;
+  text-transform: capitalize;
+  color: black;
+}
