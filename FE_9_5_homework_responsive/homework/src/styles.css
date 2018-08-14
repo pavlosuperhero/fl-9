@@ -1,0 +1,156 @@
+/* * Feel free to change name of colors if you need it * Feel free to add new colors if you need it */
+ :root {
+     --bg-color--dark: #0a1223;
+     --bg-color--light: #fff;
+     --link: #5d5d5d;
+     --link--active: #54597d;
+     --link--hover: #54597d;
+     --article-title: #ddd;
+     --article-title--dark: #000;
+     --thumbnail--description: #5d5d5d;
+    /* These styles are needed only for media query max-width: 575px */
+    /* The 'Up' button (circle button at right bottom corner) */
+     --btn-color: #fff;
+     --btn-bg-color: #5ebcff;
+     --navigation-border-bottom: #ddd;
+     --thumbnail-title: #484747;
+}
+/* Your styles go here */
+ body{
+     background-color: var(--bg-color--dark);
+     font-family: sans-serif;
+}
+ h1{
+     color:var(--article-title);
+     text-align: center;
+     font-size: 85px;
+     padding-top: 60px;
+}
+ h3 {
+     background: linear-gradient(to left, #ddd, #5d5d5d);
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+}
+ p{
+     color:var(--thumbnail--description);
+}
+ nav {
+     display: flex;
+     justify-content: flex-end;
+}
+ img {
+     object-fit: cover;
+     max-width: 400px;
+     max-height: 400px;
+}
+ .header__nav{
+     display: flex;
+     justify-content: flex-end;
+     list-style: none;
+}
+ #active{
+     color: var(--link--active);
+}
+ .header__nav-element a{
+     color:var(--link);
+     padding: 25px;
+     text-decoration: none;
+     text-transform: capitalize;
+}
+ .header__nav-element a:hover{
+     transition: color 0.1s;
+     color:var(--link--hover);
+}
+ .content__block-article{
+     display: flex;
+     margin-left: 20%;
+     margin-right: 20%;
+     justify-content: center;
+     align-items: center;
+}
+ .article--content{
+     display: flex;
+     align-items: center;
+     align-content: center;
+     flex-direction: column;
+     justify-content: space-between;
+     margin-bottom: 50px 
+}
+ .content__block-article:nth-child(even){
+     flex-direction: row-reverse;
+}
+ .home-btn{
+    display: none;
+}
+ @media (max-width: 991px) {
+     .header__nav{
+         justify-content: center;
+    }
+     .content__block{
+         display: flex;
+         flex-direction: column;
+    }
+     .content__block-article, .content__block-article:nth-child(even){
+         display: flex;
+         flex-direction: column;
+    }
+}
+ @media (max-width: 575px) {
+     body{
+         background-color: var(--bg-color--light);
+    }
+     h1{
+         font-size: 45px;
+         color: var(--article-title--dark);
+    }
+     h3{
+         color: grey;
+    }
+     p{
+         font-size: 23px;
+         color:var( --thumbnail--description);
+    }
+     .header__nav{
+         display: flex;
+         padding: 15px;
+         flex-direction: column;
+         width: 100%;
+    }
+     .header__nav-element{
+         font-size: 25px;
+         list-style: none;
+         border-bottom: 1px solid var(--navigation-border-bottom);
+         list-style: none;
+         padding: 0;
+    }
+     .header__nav-element a{
+         color:var(--link);
+         text-decoration: none;
+        ;
+    }
+     .header__nav-element a:hover{
+         color:var(--link--hover);
+         transition: color 0.2s;
+    }
+     #active{
+         color: var(--link--active);
+    }
+     .home-btn {
+         background-color: var(--btn-bg-color);
+         border-radius: 50%;
+         bottom: 30px;
+         box-shadow: 10px 10px 20px var(--btn-shadow-color);
+         color: var(--btn-color);
+         display: block;
+         height: 75px;
+         line-height: 75px;
+         position: fixed;
+         right: 30px;
+         text-align: center;
+         text-decoration: none;
+         width: 75px;
+    }
+     .home-btn:visited {
+         color: var(--btn-color);
+    }
+}
