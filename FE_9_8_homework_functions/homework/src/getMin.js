@@ -14,5 +14,5 @@ function getMin(){
             array[i-1] = swap;
         }
 	}
-    return array[0] === 0 ? array[1] : array[0];
+    return array[0];
 }
