@@ -63,7 +63,5 @@ const values = objects => {
 }
 /*! Task number 8; !*/
 const showFormattedDate = date => {
-    return `It is ${date.getDate()} of ${date.toLocaleString("en-us", { month: "short" })}, ${date.getFullYear()}`;
+    return `It is ${date.getDate()} of ${date.toLocaleString('en-us', { month: 'short' })}, ${date.getFullYear()}`;
 }
-
-console.log(showFormattedDate(new Date('2018-08-27T01:10:00')));
