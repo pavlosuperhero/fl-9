@@ -62,9 +62,8 @@ const values = objects => {
     return newArray;
 }
 /*! Task number 8; !*/
-function showFormattedDate(date){
-    const monthShort = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
-    let outPut = `It is ${date.getDate()} of ${monthShort[date.getMonth()]}, ${date.getFullYear()}`
-    
-    return outPut;
+const showFormattedDate = date => {
+    return `It is ${date.getDate()} of ${date.toLocaleString("en-us", { month: "short" })}, ${date.getFullYear()}`;
 }
+
+console.log(showFormattedDate(new Date('2018-08-27T01:10:00')));
