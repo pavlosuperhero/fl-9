@@ -11,19 +11,19 @@
   <div id="root">
     <h1>Simple TODO List</h1>
     <header class="head__main-page" id="head__main-page">
-      <button id="main__addbtn" onclick="btns.add()">Add New Item</button>
+      <button id="main__addbtn" onclick="btnAction.add()">Add New Item</button>
       <h2>Todo list is empty!</h2>
     </header>
     <section id="add" class="add__fields-close">
       <input type="text" id="input_field">
       <span>
-        <button id="dltBtn" onclick="btns.cancel()">Cencel</button>
-        <button id="addBtn" onclick="btns.save()">Save</button>
+        <button id="dltbtn" onclick="btnAction.cancel()">Cencel</button>
+        <button id="addbtn" onclick="btnAction.save()">Save</button>
       </span>
     </section>
-    <section id="modify">
-    </section>
 </div>
+<section id='todo_list'></section>
+
   <script src="./src/app.js"></script>
 </body>
 
